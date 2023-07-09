@@ -2,6 +2,6 @@
 
 This is my student project to systematize and simplify interaction with the curriculum. In it, you can easily get a schedule for a group/teacher/auditorium.  The application has a convenient search, as well as the ability to add or remove a group/teacher/auditorium to favorites.
 
-<img src="[https://github.com/nkatco/ScheduleApp/assets/67635748/fb8ab3d0-772d-4ea2-8f16-6f6136752478](https://github.com/nkatco/ScheduleApp/assets/67635748/ad8d82b2-cf4b-4ee1-b5ff-cf52dfba529a)" width="200" height="400"/>
+<img src="https://psv4.userapi.com/c237231/u302585108/docs/d31/0aa33b792e93/video_2023-07-09_11-49-02.gif?extra=2Z5WFahKUJG9I6CB9WuLJiYobo2KpD29g9Opk57h0KfEYyWNk0Jp6IeNQZU-XIlK892P_T2HoAvCoqtZihifclw2xxcIFZuyIRazJoUl-1dOO2n-LmDoDYojXV9hkXWZfbkiME9kR3t_tnGR77HbiWRGSQ" width="200" height="400"/>
 
 If you want to use it for your needs, then you need to rewrite the `Main Repository` for your API and most likely rewrite all models.
