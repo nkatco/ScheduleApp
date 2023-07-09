@@ -32,7 +32,7 @@ public class LessonsAdapter extends RecyclerView.Adapter<LessonsAdapter.LessonsV
     @NonNull
     @Override
     public LessonsAdapter.LessonsViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View v = LayoutInflater.from(context).inflate(R.layout.lesson_item, parent, false);
+        View v = LayoutInflater.from(context).inflate(R.layout.schedule_item, parent, false);
         return new LessonsViewHolder(v);
     }
 

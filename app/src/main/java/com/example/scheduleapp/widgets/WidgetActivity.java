@@ -66,7 +66,7 @@ public class WidgetActivity extends AppCompatActivity implements TabLayout.OnTab
 
         setResult(RESULT_CANCELED, resultValue);
 
-        setContentView(R.layout.activity_lessons_widget);
+        setContentView(R.layout.activity_schedule_widget);
         getSupportActionBar().hide();
 
         widgetRecyclerView = findViewById(R.id.widgetRecyclerView);

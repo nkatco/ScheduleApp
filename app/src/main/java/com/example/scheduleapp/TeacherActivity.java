@@ -44,7 +44,7 @@ public class TeacherActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lessons_teacher);
+        setContentView(R.layout.activity_schedule_teacher);
         getSupportActionBar().hide();
 
         Intent i = getIntent();

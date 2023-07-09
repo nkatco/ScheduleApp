@@ -43,7 +43,7 @@ public class GroupActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lessons_group);
+        setContentView(R.layout.activity_schedule_group);
         getSupportActionBar().hide();
 
         Intent i = getIntent();

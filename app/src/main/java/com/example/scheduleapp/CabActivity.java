@@ -49,7 +49,7 @@ public class CabActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lessons_cab);
+        setContentView(R.layout.activity_schedule_cab);
         getSupportActionBar().hide();
 
         Intent i = getIntent();
