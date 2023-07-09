@@ -36,7 +36,7 @@
                 android:id="@+id/cabLessonTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Расписания нет!"
+                android:text="Schedule not found"
                 android:textColor="#FFFFFF"
                 android:textSize="@dimen/_10sdp"
                 android:textStyle="bold" />
@@ -172,7 +172,7 @@
                         android:id="@+id/cabTextView4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="На главную"
+                        android:text="Main Page"
                         android:textColor="#FFFFFF"
                         android:textSize="@dimen/_9sdp" />
                 </LinearLayout>

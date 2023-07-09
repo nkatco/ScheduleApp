@@ -34,6 +34,8 @@ public class MainRepository {
     private static List<Group> favoriteGroups;
     private static List<Teacher> favoriteTeachers;
     private static List<Cab> favoriteCabs;
+    private String domain = "https://asu.samgk.ru/";
+    private String domain2 = "https://mfc.samgk.ru/";
 
     public MainRepository() throws IOException, JSONException {
         final String[] lineGroup = new String[1];
@@ -128,7 +130,7 @@ public class MainRepository {
     }
 
     private String getCabs() throws IOException {
-        URL url = new URL("https://asu.samgk.ru/api/cabs");
+        URL url = new URL(domain + "/api/cabs");
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();
         connection.setRequestMethod("GET");
         connection.setReadTimeout(10000);
@@ -146,7 +148,7 @@ public class MainRepository {
         return line;
     }
     private String getGroups() throws IOException {
-        URL url = new URL("https://mfc.samgk.ru/api/groups");
+        URL url = new URL(domain2 + "api/groups");
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();
         connection.setRequestMethod("GET");
         connection.setReadTimeout(10000);
@@ -164,7 +166,7 @@ public class MainRepository {
         return line;
     }
     private String getTeachers() throws IOException {
-        URL url = new URL("https://asu.samgk.ru/api/teachers");
+        URL url = new URL(domain + "api/teachers");
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();
         connection.setRequestMethod("GET");
         connection.setReadTimeout(10000);
@@ -184,7 +186,7 @@ public class MainRepository {
     public List<Lesson> getScheduleByGroup(int id, String data) throws IOException {
         OkHttpClient client = new OkHttpClient();
         Request request = new Request.Builder()
-                .url("https://asu.samgk.ru/api/schedule/" + id + "/" + data + "/")
+                .url(domain + "api/schedule/" + id + "/" + data + "/")
                 .addHeader("Referer", "https://samgk.ru")
                 .build();
 
@@ -212,7 +214,7 @@ public class MainRepository {
     public List<Lesson> getScheduleByTeacher(int id, String data) throws IOException {
         OkHttpClient client = new OkHttpClient();
         Request request = new Request.Builder()
-                .url("https://asu.samgk.ru/api/schedule/teacher/" + data + "/" + id)
+                .url(domain + "api/schedule/teacher/" + data + "/" + id)
                 .addHeader("Referer", "https://samgk.ru")
                 .build();
 
@@ -240,7 +242,7 @@ public class MainRepository {
     public List<Lesson> getScheduleByCab(String cab, String data) throws IOException {
         OkHttpClient client = new OkHttpClient();
         Request request = new Request.Builder()
-                .url("https://asu.samgk.ru/api/schedule/cabs/" + data + "/cabNum/" + cab)
+                .url(domain + "api/schedule/cabs/" + data + "/cabNum/" + cab)
                 .addHeader("Referer", "https://samgk.ru")
                 .build();
 
@@ -323,6 +325,5 @@ public class MainRepository {
                 }
             }
         }
-        System.out.println("Cabs size: " + cabs.size());
     }
 }

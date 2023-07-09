@@ -90,7 +90,7 @@
                         android:layout_gravity="center"
                         android:elevation="10dp"
                         android:gravity="center"
-                        android:text="Назад"
+                        android:text="Back"
                         android:textColor="#287EFF"
                         android:textSize="@dimen/_12sdp" />
                 </androidx.cardview.widget.CardView>

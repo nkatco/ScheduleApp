@@ -127,11 +127,16 @@ public class CabActivity extends AppCompatActivity {
         lessonsRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         lessonsRecyclerView.setAdapter(adapter);
 
-        if(list.size() == 0) {
+        if(list != null) {
+            if (list.size() == 0) {
+                adapter.setNoItems();
+                lessonCardView.setVisibility(View.VISIBLE);
+            } else {
+                lessonCardView.setVisibility(View.INVISIBLE);
+            }
+        } else {
             adapter.setNoItems();
             lessonCardView.setVisibility(View.VISIBLE);
-        } else {
-            lessonCardView.setVisibility(View.INVISIBLE);
         }
 
         SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");

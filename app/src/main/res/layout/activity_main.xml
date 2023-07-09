@@ -84,9 +84,9 @@
                         android:id="@+id/textView3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Профиль"
-                        android:textSize="@dimen/_9sdp"
-                        android:textColor="#DCFFFFFF" />
+                        android:text="Profile"
+                        android:textColor="#DCFFFFFF"
+                        android:textSize="@dimen/_9sdp" />
 
                     <ImageView
                         android:id="@+id/mainCalendarImageView"
@@ -131,7 +131,7 @@
                         android:id="@+id/textView2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Поиск"
+                        android:text="Search"
                         android:textColor="#D3FFFFFF"
                         android:textSize="@dimen/_9sdp" />
                 </LinearLayout>
