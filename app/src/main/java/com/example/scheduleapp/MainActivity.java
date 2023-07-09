@@ -165,7 +165,7 @@ public class MainActivity extends AppCompatActivity implements TabLayout.OnTabSe
         mainTabLayout.addTab(teacherTab);
 
         TabLayout.Tab cabinetTab = mainTabLayout.newTab();
-        cabinetTab.setText("CABINET");
+        cabinetTab.setText("AUDITORIUM");
         mainTabLayout.addTab(cabinetTab);
 
         MainRepository.updateFavoriteGroups();

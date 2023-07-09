@@ -34,8 +34,8 @@ public class MainRepository {
     private static List<Group> favoriteGroups;
     private static List<Teacher> favoriteTeachers;
     private static List<Cab> favoriteCabs;
-    private String domain = "https://asu.samgk.ru/";
-    private String domain2 = "https://mfc.samgk.ru/";
+    private String domain = "YOUR DOMAIN";
+    private String domain2 = "YOUR DOMAIN 2 IF REQUIRED";
 
     public MainRepository() throws IOException, JSONException {
         final String[] lineGroup = new String[1];
